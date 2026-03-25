@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Current Weather </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        h1 {
+            background-color: #0D0E61;
+            text-decoration: underline;
+            font-family: "Limelight", system-ui, sans-serif;
+        }
+        .signup-btn {
+            padding: 5px 10px;
+            font-size: 15px;
+            color: white;
+            background-color: #43E058;
+        }
+            .signup-btn:hover {
+                background-color: #71B070
+            }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Check the Current Weather by Region
+    </h1>
+    <h3>Enter a ZipCode: <input type="text" id="zip" name="zip"></h3>
+    <div id="zip-error">
+        <span id="zipCodeError"></span><br />
+        <span id="zipLengthError"></span><br />
+    </div>
+    <br />
+    <div id="langlong">
+        Location: <span id="name"></span><span id="state"></span><br />
+        <br />
+        Latitude: <span id="lat"></span> <br>
+        <br />
+        Longitude: <span id="lon"></span> <br>
+    </div>
+    <br />
+    <div id="button">
+    <input type="submit" id="checkWeather" value="Check the Weather!" class="signup-btn">
+    </div>
+    <div id="main-weather">
+        Current Weater: <span id="main"></span> <br />
+        Tempterature: <span id="temp"></span> <br />
+        <br />
+        <span id="weatherImg"></span>
+        <br />
+        <div id="description"><span id="description"></span></div>
+        <br />
+    </div>
+    <br />
+
+
+    <br /><br />
+
+    <br />
+
+    <script src="js/script.js"></script>
+
+    <footer>
+        <hr>
+        CST336 Internet Programming. 2026&copy; Fierro-Ojeda<br>
+    </footer>
+
+</body>
+</html>
