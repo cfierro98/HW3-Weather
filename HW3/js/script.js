@@ -7,7 +7,7 @@ async function displayCity() {
     let zipCode = document.querySelector("#zip").value;
     let apiKey = "ed4e28e78a21a328ca9caf479944e1a6";
 
-    let url = `http://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},US&appid=${apiKey}`;
+    let url = `https://api.openweathermap.org/geo/1.0/zip?zip=${zipCode},US&appid=${apiKey}`;
     let response = await fetch(url);
     let data = await response.json();
 
